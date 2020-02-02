@@ -9,7 +9,7 @@ import './styles/styles.sass';
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <App/>
     </Router>
   </Provider>
