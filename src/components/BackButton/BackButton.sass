@@ -1,0 +1,33 @@
+@import "src/styles/vars"
+
+.back-button
+  display: block
+  position: relative
+  width: 40px
+  height: 40px
+  font-size: 0
+  box-shadow: 0 0 8px rgba(darken($grey, 24), .8)
+  border-radius: 50%
+  background: $linkColor
+  cursor: pointer
+  transition: background-color .25s
+
+  &:hover
+    background: lighten($linkColor, 8)
+
+  &::before
+    content: ''
+    background: url('./back-button.svg') 50% no-repeat
+    background-size: 100%
+    width: 24px
+    height: 24px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    margin-left: -1px
+
+  &_content
+    &_home
+      &::before
+        background-image: url('./home-button.svg')

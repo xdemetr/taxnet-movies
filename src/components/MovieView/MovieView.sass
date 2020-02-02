@@ -1,0 +1,40 @@
+@import "src/styles/vars"
+
+.movie-view
+  display: flex
+  position: relative
+  flex-wrap: wrap
+
+  &__image-box
+    flex: 0 0 160px
+
+  &__image
+    height: 240px
+    border-radius: 4px
+    box-shadow: 0 0 8px rgba($grey, .8)
+
+  &__content
+    flex: 1 0 auto
+    margin-top: 8px
+
+    +media($tablet-portrait)
+      padding-left: 24px
+
+  &__title
+    font: 700 18px/24px sans-serif
+    margin-bottom: 8px
+
+  &__tags
+    margin-top: 16px
+
+  &__aside
+    order: -1
+    flex: 1 0 100%
+    margin-bottom: 16px
+
+    +media($tablet-portrait)
+      position: absolute
+      top: 0
+      right: 100%
+      margin-right: 40px
+      margin-bottom: 0

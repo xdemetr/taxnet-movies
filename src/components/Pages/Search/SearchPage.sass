@@ -1,0 +1,21 @@
+@import "src/styles/vars"
+
+.search-page
+  display: flex
+  position: relative
+  flex-wrap: wrap
+
+  &__content
+    flex: 1 0 100%
+
+  &__aside
+    order: -1
+    flex: 1 0 100%
+    margin-bottom: 16px
+
+    +media($tablet-portrait)
+      position: absolute
+      top: 0
+      right: 100%
+      margin-right: 40px
+      margin-bottom: 0

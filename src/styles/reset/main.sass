@@ -1,0 +1,49 @@
+body,
+h1, h2, h3, h4, h5, h6, a, th,
+abbr, address,
+del, b, strong, em, i, ins, small,
+sub, sup, var, cite, code, kbd, samp,
+input, textarea, button
+  font: inherit
+
+b, strong
+  font-weight: bold
+
+i, em
+  font-style: italic
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, dl, dd, figure, form
+  margin: 0
+
+legend, th, td
+  padding: 0
+
+ul, ol
+  list-style: none
+  margin: 0
+  padding: 0
+
+iframe, abbr
+  border: 0
+
+table
+  border-spacing: 0
+  border-collapse: collapse
+
+caption
+  text-align: left
+
+blockquote, q
+  quotes: none
+
+  &::before,
+  &::after
+    content: ''
+
+a
+  text-decoration: none
+  color: #369
+
+  &:hover
+    text-decoration: underline
